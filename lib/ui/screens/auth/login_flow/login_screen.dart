@@ -112,7 +112,7 @@ class _UserSignInScreenState extends State<UserSignInScreen> {
                             color: AppColor.kSecondaryAlt,
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),

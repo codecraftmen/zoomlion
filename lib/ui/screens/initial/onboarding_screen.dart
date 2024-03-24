@@ -168,10 +168,10 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
 class DotIndicator extends StatelessWidget {
   const DotIndicator({
-    Key? key,
+    super.key,
     this.isActive = false,
     required this.color,
-  }) : super(key: key);
+  });
 
   final bool isActive;
   final Color color;
@@ -206,12 +206,12 @@ class Onboard {
 
 class OnBoardContent extends StatelessWidget {
   const OnBoardContent({
-    Key? key,
+    super.key,
     required this.image,
     required this.title,
     required this.description,
     required this.color,
-  }) : super(key: key);
+  });
 
   final String image, title, description;
   final Color color;
