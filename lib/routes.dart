@@ -12,6 +12,8 @@ import 'ui/screens/blank_screen.dart';
 import 'ui/screens/initial/onboarding_screen.dart';
 import 'ui/screens/initial/splash_screen.dart';
 import 'ui/screens/initial/welcome_screen.dart';
+import 'ui/screens/user_tabs/payments/components/make_payment.dart';
+import 'ui/screens/user_tabs/payments/components/payment_method.dart';
 import 'ui/screens/user_tabs/user_tab.dart';
 
 class RouteGenerator {
@@ -28,6 +30,8 @@ class RouteGenerator {
   static const String almostDone = '/almost_done';
   static const String welcomeMessage = '/welcome_msg';
   static const String userTabs = '/user_tabs';
+  static const String paymentMethod = '/payment_method';
+  static const String makePayment = '/make_payment';
 
   RouteGenerator._();
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -58,6 +62,11 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const WelcomeMessage());
       case userTabs:
         return MaterialPageRoute(builder: (_) => const UserTabs());
+      case paymentMethod:
+        return MaterialPageRoute(builder: (_) => const PaymentMethod());
+      case makePayment:
+        return MaterialPageRoute(builder: (_) => const MakePayment());
+
       default:
         throw const RouteException('Route not found');
     }
