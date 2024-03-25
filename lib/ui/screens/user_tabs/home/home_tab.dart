@@ -59,7 +59,7 @@ class _HomeTabState extends State<HomeTab> {
                           ),
                           shape: OvalBorder(),
                         ),
-                      )
+                      ),
                     ],
                   ),
                   Row(
